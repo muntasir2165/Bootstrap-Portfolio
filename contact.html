@@ -2,57 +2,85 @@
 <html lang="en-us">
 
 <head>
+
   <meta charset="UTF-8">
-  <title>Muntasir Biojid Basic Portfolio</title>
+  <title>About | Muntasir Biojid</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <!-- Font Awesome icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
 <body>
+  
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="index">Muntasir Biojid</a>
+  
+  <!-- Links -->
+  <ul class="nav navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="portfolio.html">Portfolio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+  </ul>
+</nav>
 
-  <header>
-    <div class="headerContent">
-      <a href="./index.html"><h1>Muntasir Biojid</h1></a>
-      <nav>
-        <a href="./index.html">About</a> |
-        <a href="./portfolio.html">Portfolio</a> |
-        <a href="./contact.html">Contact</a>
-      </nav>
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-2 ml-5">
+        <h1>About Me</h1>
+      </div>
     </div>
-  </header>
+    <div class="row m-4">
 
-  <section>
-    <header>
-      <h2>Contact</h2>
-    </header>
-    <hr>
-    <form id="contactForm">
-      <label for="name">Name</label><br>
-      <input type="text" name="name" id="name" placeholder="John Smith"><br>
-      <label for="email">Email</label><br>
-      <input type="email" name="email" id="email" placeholder="example@gmail.com"><br>
-      <label for="message">Message</label><br>
-      <textarea rows="10" cols="30" name="message" id="message">
-      </textarea><br>
-      <input type="submit" value="Submit" id="formSubmit">
-    </form>
-  </section>
+      <div class="col-md-3">
+        <img src="assets/images/profilePic.jpg" class="img-thumbnail" alt="Muntasir Biojid Image">
+      </div>
 
-  <footer>
-   <small>&copy; Copyright 2018, Muntasir Biojid. All Rights Reserved.</small>
- </footer>
- 
- <script>
-  document.getElementById("formSubmit").addEventListener("click", function() {
-      // clear the form data
-      document.getElementById("name").innerHTML = "";
-      document.getElementById("email").innerHTML = "";
-      document.getElementById("message").innerHTML = "";
-      alert("The message has been sent!");
-    });
-  </script>
+      <div class="col-md-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum luctus felis, ac rhoncus nunc porttitor condimentum. Mauris sit amet dolor eu elit varius varius facilisis id arcu. Proin vel dui massa. Nunc rhoncus fringilla pharetra. Vestibulum bibendum consectetur euismod. Proin commodo purus vitae sollicitudin consectetur.</p>
+
+        <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id eros iaculis, pulvinar quam eget, egestas mauris.</p>
+
+        <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-header"><h6>Connect With Me</h6></div>
+          <div class="card-body">
+            <a href="https://www.linkedin.com/in/muntasir-biojid-888669111/" class="fa fa-linkedin rounded-circle" target="_blank"></a>
+            <a href="https://github.com/muntasir2165" class="fa fa-github rounded-circle" target="_blank"></a>
+            <a href="https://stackoverflow.com/users/9555656/muntasir2165" class="fa fa-stack-overflow rounded-circle" target="_blank"></a>
+          </div> 
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 
 </body>
 
