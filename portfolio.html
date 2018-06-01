@@ -29,22 +29,21 @@
 <body>
   
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <!-- Brand/logo -->
-  <a class="navbar-brand" href="index">Muntasir Biojid</a>
-  
-  <!-- Links -->
-  <ul class="nav navbar-nav ml-auto">
-    <li class="nav-item">
-      <a class="nav-link" href="index.html">About</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="portfolio.html">Portfolio</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="contact.html">Contact</a>
-    </li>
-  </ul>
-</nav>
+
+    <a class="navbar-brand" href="index">Muntasir Biojid</a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <div class="navbar-nav ml-auto float-right text-right pr-3">
+      <a class="nav-item nav-link" href="index.html">About</a>
+          <a class="nav-item nav-link active" href="portfolio.html">Portfolio</a>
+          <a class="nav-item nav-link" href="contact.html">Contact</a>
+        </div>
+      </div>
+  </nav>
 
   <div class="container-fluid">
 
@@ -53,34 +52,163 @@
         <h1>Portfolio</h1>
       </div>
     </div>
-    <div class="row m-4">
 
-      <div class="col-md-3">
-        <img src="assets/images/profilePic.jpg" class="img-thumbnail" alt="Muntasir Biojid Image">
-      </div>
-
-      <div class="col-md-6">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum luctus felis, ac rhoncus nunc porttitor condimentum. Mauris sit amet dolor eu elit varius varius facilisis id arcu. Proin vel dui massa. Nunc rhoncus fringilla pharetra. Vestibulum bibendum consectetur euismod. Proin commodo purus vitae sollicitudin consectetur.</p>
-
-        <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id eros iaculis, pulvinar quam eget, egestas mauris.</p>
-
-        <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div>
-
-      <div class="col-md-3">
-        <div class="card">
-          <div class="card-header"><h6>Connect With Me</h6></div>
-          <div class="card-body">
-            <a href="https://www.linkedin.com/in/muntasir-biojid-888669111/" class="fa fa-linkedin rounded-circle" target="_blank"></a>
-            <a href="https://github.com/muntasir2165" class="fa fa-github rounded-circle" target="_blank"></a>
-            <a href="https://stackoverflow.com/users/9555656/muntasir2165" class="fa fa-stack-overflow rounded-circle" target="_blank"></a>
-          </div> 
-        </div>
-      </div>
-
+  <!--First row of my work-->
+  <section class="row text-center">
+    <div class="col-md-3 offset-md-3">
+      <img class="img-thumbnail animated bounce infinite" src="assets/images/asteroids.jpg" alt="Python Games 1" data-toggle="modal" data-target="#work1">
+      <h4>Python Games 1</h4>
+      <p><a href="https://github.com/muntasir2165/IIPP_gaming_projects" target="_blank">GitHub Link</a></p>
     </div>
 
+    <div class="col-md-3 offset-md-right-3">
+      <img class="img-thumbnail" src="assets/images/tictactoe.jpg" alt="Python Games 2" data-toggle="modal" data-target="#work2">
+      <h4>Python Games 2</h4>
+      <p><a href="https://github.com/muntasir2165/PoC_Game_Projects" target="_blank">GitHub Link</a></p>
+    </div>
+  </section>
+
+  <!--Second row of my work-->
+  <section class="row text-center">
+    <div class="col-md-3 offset-md-3">
+      <img class="img-thumbnail" src="assets/images/python.jpg" alt="Python Games/Projects" data-toggle="modal" data-target="#work3">
+      <h4>Python Games/Projects</h4>
+      <p><a href="https://github.com/muntasir2165/JavaProjects" target="_blank">GitHub Link</a></p>
+    </div>
+    <div class="col-md-3 offset-md-right-3">
+      <img class="img-thumbnail" src="assets/images/java.jpg" alt="Java Games/Projects" data-toggle="modal" data-target="#work4">
+      <h4>Java Games/Projects</h4>
+      <p><a href="https://github.com/muntasir2165/Python-Projects-and-Games" target="_blank">GitHub Link</a></p>
+    </div>
+  </section>
+
+ <!--Third row of my work-->
+  <section class="row text-center">
+    <div class="col-md-3 offset-md-3">
+      <img class="img-thumbnail" src="assets/images/web.jpg" alt="Web Development" data-toggle="modal" data-target="#work5">
+      <h4>Web Development</h4>
+      <p><a href="https://github.com/muntasir2165/WebDevelopment" target="_blank">GitHub Link</a></p>
+    </div>
+
+    <div class="col-md-3 offset-md-right-3">
+      <img class="img-thumbnail" src="assets/images/loading.gif" alt="Future Work..." data-toggle="modal" data-target="#work6">
+      <h4>Future Work...</h4>
+    </div>
+  </section>
+
+<!--The following are the code for the modals-->
+<!--Modal for Work 1-->
+<div class="modal fade text-center modal-text" id="work1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel1">Python Games 1</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-thumbnail" src="assets/images/asteroids.jpg" alt="Python Games 1">
+        <p>These are the projects that really got me hooked to Python. It's also this set of projects that I had my first taste of object-oriented programming. I made some very rudimentary games (in today's standards at least) like, Rock-Paper-Scissors, Guess The Number, Blackjack and the 80's classic Asteroids!</p>
+        <p><a href="https://github.com/muntasir2165/IIPP_gaming_projects" target="_blank">GitHub Link</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
   </div>
+</div>
+
+<!--Modal for Work 2-->
+<div class="modal fade text-center modal-text" id="work2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel2">Python Games 2</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-thumbnail" src="assets/images/tictactoe.jpg" alt="Python Games 2">
+        <p>This is like a step up from the Python games I made earlier. While implementing these games, I had a thorough introduction to some basic algorithms and I really enjoyed seeing them bring life to these games. In the collection are games like 2048 (I only implemented the game logic), Cookie Clicker, Tic-Tac-Toe (a Monte Carlo and a Minimax version), Yahtzee and Word Wrangler</p>
+        <p><a href="https://github.com/muntasir2165/PoC_Game_Projects" target="_blank">GitHub Link</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal for Work 3-->
+<div class="modal fade text-center modal-text" id="work3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel3">Python Games/Projects</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-thumbnail" src="assets/images/python.jpg" alt="Python Games/Projects">
+        <p>Another collection of Python games and projects that is heavily based on object-oriented programming</p>
+        <p><a href="https://github.com/muntasir2165/Java-Projects-and-Games" target="_blank">GitHub Link</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal for Work 4-->
+<div class="modal fade text-center modal-text" id="work4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel4">Java Games/Projects</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-thumbnail" src="assets/images/java.jpg" alt="Java Games/Projects">
+        <p>A collection of Java games and projects that I worked through as part of various online courses</p>
+        <p><a href="https://github.com/muntasir2165/Python-Projects-and-Games" target="_blank">GitHub Link</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal for Work 5-->
+<div class="modal fade text-center modal-text" id="work5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel5">Web Development</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-thumbnail" src="assets/images/web.jpg" alt="Web Development">
+        <p>My work on website creation and optimization using HTML, CSS and JavaScript. These projects heavily rely Bootstrap and jQuery</p>
+        <p><a href="https://github.com/muntasir2165/Web-Development" target="_blank">GitHub Link</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal for Work 6-->
+<div class="modal fade text-center modal-text" id="work6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel6">Future Work...</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-thumbnail" src="assets/images/loading.gif" alt="Future Work...">
+        <p>More stuffs are coming! I promise...</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 
