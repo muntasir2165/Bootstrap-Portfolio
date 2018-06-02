@@ -62,6 +62,20 @@ hr {
   color: white;
 }
 
+/* Container holding the image and the label text */
+.work-container {
+    position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    background-color: #4aaaa5;
+    color: white;
+}
+
 /*shake animation for each of the portfolio divs containing an image and a caption*/
 div image:hover {
     /* Start the shake animation and make the animation last for 0.5 seconds */
