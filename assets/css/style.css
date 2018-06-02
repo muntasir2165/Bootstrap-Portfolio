@@ -5,17 +5,46 @@
 	border-color: red;
 }*/
 
+body {
+	background: url(../images/background.png) center center no-repeat fixed #464646;
+
+    /*This is what makes the background image rescale based on the container's size
+    Use vendor prefixes to support different browsers*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar {
+  background:none;
+}
+
+hr {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+  border-style: solid none;
+  border-width: 1px 0;
+  margin: 18px 0;
+}
+
 .fa {
-  padding: 8%;
-  font-size: 200%;
+  padding: 20px;
+  font-size: 30px;
   width: 30%;
+  border-radius: 30%;
+  height: auto;
   text-align: center;
   text-decoration: none;
-  margin: 2% 1%;
+  margin: 5px 2px;
 }
 
 .fa:hover {
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 .fa-github {
